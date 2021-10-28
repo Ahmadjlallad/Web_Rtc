@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+    script(defer, src="../public/js/app.js") 
+  body 
+    header
+      h1 Noom
+    // if we go here render this file
+    main
+      form#nicknameForm
+        input(
+          type="text",
+          name="nickname",
+          placeholder="chose a nickname",
+          required
+        )
+        button(type="submit") Save
+      ul
+      form#messageForm
+        input(
+          type="text",
+          name="message",
+          placeholder="writ a message",
+          required
+        )
+        button(type="submit") Send
