@@ -12,12 +12,37 @@ html(lang="en")
     header
       h1 Noom
     main
+      #name
+        form
+          label(for="nickname") Nickname
+          input#nickname(
+            type="text",
+            required="required",
+            placeholder="nick name",
+            name="nickname"
+          )
+          button(type="submit") Join
       #welcome
         form
-          input(
+          label(for="roomInp") Room
+          input#roomInp(
             type="text",
             required="required",
             placeholder="room name",
             name="room"
           )
           button(type="submit") Join
+      h4 Open rooms
+      ul
+      #room
+        h3
+        ul
+        form
+          label(for="message") Message
+          input#message(
+            type="text",
+            required="required",
+            placeholder="message",
+            name="message"
+          )
+          button(type="submit") Send
